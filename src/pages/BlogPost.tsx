@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Calendar, User, Clock, Share2, ChevronRight, MessageSquare } from 'lucide-react';
+import { ArrowLeft, Calendar, User, Clock, Share2, ChevronRight, MessageSquare, Tag } from 'lucide-react';
 import { BLOG_POSTS } from '@/data/blog-posts';
 
 export function BlogPost() {
