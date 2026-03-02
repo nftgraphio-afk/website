@@ -1,10 +1,13 @@
 import { Background } from '@/components/Background';
 import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from '@/pages/Home';
 import { Philosophy } from '@/pages/Philosophy';
 import { Ecosystem } from '@/pages/Ecosystem';
 import { Rates } from '@/pages/Rates';
+import { Blog } from '@/pages/Blog';
+import { BlogPost } from '@/pages/BlogPost';
 import { MPCWallet } from '@/pages/ecosystem/MPCWallet';
 import { ComingSoon } from '@/pages/ecosystem/Placeholder';
 
@@ -27,7 +30,10 @@ function App() {
             <Route path="/ecosystem/integrations" element={<ComingSoon name="MCP & Integration Layer" />} />
             <Route path="/ecosystem/compliance" element={<ComingSoon name="Compliance & Audit Framework" />} />
             <Route path="/rates" element={<Rates />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
