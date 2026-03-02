@@ -8,6 +8,9 @@ export function Footer() {
   const footerLinks = {
     platform: [
       { name: 'Ecosystem', href: '/ecosystem' },
+      { name: "AI Infrastructure Teams", href: "/for-ai-infrastructure-teams" },
+      { name: "Web3 Startups", href: "/for-web3-startups" },
+      { name: "Crypto Enterprises", href: "/for-crypto-enterprises" },
       { name: 'Documentation', href: '#', external: true },
     ],
     company: [

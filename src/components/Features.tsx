@@ -28,25 +28,24 @@ export function Features() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
           </span>
-          <span className="text-xs font-mono text-primary uppercase tracking-[0.2em] font-medium">System Capabilities</span>
+          <span className="text-xs font-mono text-primary uppercase tracking-[0.2em] font-medium">Core Pillars</span>
         </div>
 
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium tracking-tight text-white mb-8">
-          Banking intelligence <br />
-          <span className="text-white/60">made effortless.</span>
+          The Foundations of <br />
+          <span className="text-white/60">Safe Autonomy</span>
         </h2>
 
         <p className="text-xl text-white/60 leading-relaxed max-w-2xl font-light tracking-tight">
-          Streamline your capital deployment with AI-driven protocols designed to simplify, automate, and enhance your
-          wealth architecture.
+          DeAgenticAI is built on three essential pillars that turn policy-driven ideas into real, enforceable control. Together, they provide the framework your AI agents need to operate securely, predictably, and efficiently in Web3 environments.
         </p>
       </div>
 
       {/* Feature Cards Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 z-10 w-full max-w-7xl relative gap-x-6 gap-y-6">
-        <AutomatedExecutionCard />
-        <SmartLiquidityCard />
-        <EnterpriseIntegrationCard />
+        <PolicyBasedControlCard />
+        <AgentAwareWalletsCard />
+        <SecureExecutionLayerCard />
       </div>
     </section>
   );
@@ -91,12 +90,12 @@ function SpotlightCard({ children, className = "" }: { children: React.ReactNode
   );
 }
 
-function AutomatedExecutionCard() {
+function PolicyBasedControlCard() {
   return (
     <SpotlightCard>
-      <h3 className="text-2xl font-semibold tracking-tight text-white mb-4 relative z-10">Automated Execution</h3>
+      <h3 className="text-2xl font-semibold tracking-tight text-white mb-4 relative z-10">Policy-Driven Autonomy</h3>
       <p className="text-base text-white/50 leading-relaxed mb-12 relative z-10 font-light">
-        Generate high-yield strategies and execute trades in milliseconds with our custodial AI algorithms.
+        Define what your AI agents can and cannot do. Enforce boundaries across wallets, protocols, and decentralized systems to ensure predictable, safe operations.
       </p>
 
       {/* Visual: Chat/Terminal UI */}
@@ -107,15 +106,15 @@ function AutomatedExecutionCard() {
             <div className="w-2 h-2 rounded-full bg-white/40"></div>
             <div className="w-2 h-2 rounded-full bg-white/40"></div>
           </div>
-          <span className="text-xs text-white/30 font-mono">AURA_OS v2.1</span>
+          <span className="text-xs text-white/30 font-mono">DeAgenticAI v2.1</span>
         </div>
         {/* Body */}
         <div className="p-6 flex flex-col gap-5 relative h-full">
           {/* User Message */}
           <div className="self-end max-w-[90%] bg-white/10 backdrop-blur-sm rounded-2xl rounded-tr-sm p-4 border border-white/5 animate-fade-in">
             <p className="text-xs text-white/90 font-light leading-relaxed">
-              Initialize rebalancing for <span className="text-white font-medium">Portfolio Alpha</span>.
-              Target <span className="text-primary">12.5% APY</span>.
+              Initialize secure connection <span className="text-white font-medium">Alpha AI Bot</span>.
+              Target <span className="text-primary">UniSwap</span>.
             </p>
           </div>
 
@@ -124,7 +123,7 @@ function AutomatedExecutionCard() {
             <div className="flex items-center gap-2 mb-3 text-primary font-mono text-[10px] uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" /> DeAgenticAI Protocol
             </div>
-            <p className="mb-4 text-xs text-white/80 font-light">Analyzing liquidity depth across 4 exchanges. Optimal route secured.</p>
+            <p className="mb-4 text-xs text-white/80 font-light">Analyzing Bot Intent. Optimal route secured.</p>
 
             {/* Progress Bar */}
             <div className="w-full bg-black/40 rounded-full h-1.5 mb-2 overflow-hidden">
@@ -132,7 +131,6 @@ function AutomatedExecutionCard() {
             </div>
             <div className="flex justify-between text-[10px] text-primary/60 font-mono">
               <span>EXECUTING</span>
-              <span>$52,400.00</span>
             </div>
           </div>
         </div>
@@ -141,7 +139,7 @@ function AutomatedExecutionCard() {
   );
 }
 
-function SmartLiquidityCard() {
+function AgentAwareWalletsCard() {
     const cardRef = useRef<HTMLDivElement>(null);
   
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -184,11 +182,11 @@ function SmartLiquidityCard() {
             <Zap className="w-6 h-6 text-primary relative z-10" />
           </div>
           <h3 className="text-2xl font-semibold tracking-tight text-white group-hover:text-white transition-colors">
-            Smart Liquidity
+            Wallets Built for Agents
           </h3>
         </div>
         <p className="text-base text-white/50 leading-relaxed mb-12 font-light group-hover:text-white/70 transition-colors">
-          Connect to deep liquidity pools across chains to ensure zero-slippage execution on institutional orders.
+          Custodial or non-custodial, with scoped permissions. Enable your agents to interact with Web3 assets securely, without compromising control.
         </p>
 
         {/* Visual: Hero-Inspired Orbit & Sonar */}
@@ -258,7 +256,7 @@ function SmartLiquidityCard() {
   );
 }
 
-function EnterpriseIntegrationCard() {
+function SecureExecutionLayerCard() {
   return (
     <SpotlightCard>
       <div className="flex items-center gap-3 mb-4 relative z-10">
@@ -267,11 +265,11 @@ function EnterpriseIntegrationCard() {
           <Network className="w-6 h-6 text-primary relative z-10" />
         </div>
         <h3 className="text-2xl font-semibold tracking-tight text-white group-hover:text-white transition-colors">
-          Enterprise Integration
+          Safe Actions, Every Time
         </h3>
       </div>
       <p className="text-base text-white/50 leading-relaxed mb-12 font-light group-hover:text-white/70 transition-colors relative z-10">
-        Seamlessly integrate with existing infrastructure and scale from prototype to production with confidence.
+        Execute on-chain and off-chain operations with confidence. Modular, interoperable infrastructure ensures agents act according to defined policies and permissions.
       </p>
 
       {/* Visual: Integration Nodes & Scaling */}

@@ -72,7 +72,7 @@ export function HeroVisualization() {
 
       {/* Floating Labels */}
       <div className="absolute top-[20%] lg:top-[25%] left-[10%] lg:left-[15%] flex flex-col items-end">
-        <span className="text-xs font-mono text-primary tracking-widest mb-1 opacity-80">ZERO LATENCY</span>
+        <span className="text-xs font-mono text-primary tracking-widest mb-1 opacity-80">Auditable</span>
         <div className="h-[1px] w-12 bg-gradient-to-l from-primary to-transparent"></div>
       </div>
 

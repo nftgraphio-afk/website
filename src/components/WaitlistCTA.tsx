@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { blink } from '@/lib/blink';
 import { toast } from 'react-hot-toast';
 import { motion } from 'framer-motion';
 
@@ -12,22 +11,12 @@ export function WaitlistCTA() {
     if (!email) return;
 
     setIsLoading(true);
-    try {
-      await blink.db.waitlist.create({
-        email,
-        createdAt: new Date().toISOString(),
-      });
-      toast.success('You have been added to the waitlist!');
+    // No action for now
+    setTimeout(() => {
+      toast.success('You have been added to the waitlist! (demo only)');
       setEmail('');
-    } catch (error: any) {
-      if (error.message?.includes('UNIQUE constraint failed')) {
-        toast.error('This email is already on our waitlist.');
-      } else {
-        toast.error('Something went wrong. Please try again.');
-      }
-    } finally {
       setIsLoading(false);
-    }
+    }, 1000);
   };
 
   return (
@@ -41,10 +30,10 @@ export function WaitlistCTA() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">
-              Join the Future of <span className="text-primary">Agentic Infrastructure</span>
+              Shape the Control Layer for <span className="text-primary">Agentic AI</span>
             </h2>
             <p className="text-lg text-white/60 mb-10 max-w-2xl mx-auto">
-              Our beta is currently invite-only. Join our waiting list to be the first to know when we launch and get early access to our financial tools.
+              Our early access is invite-only. Join the waitlist to stay informed about DeAgenticAI’s progress and help define the future of safe, policy-driven autonomy in Web3. No marketing fluff—just infrastructure updates.
             </p>
             
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
