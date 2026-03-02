@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Shield, ShieldCheck, Cpu, Database, FileSearch, Rocket, Network, Lock, Zap } from 'lucide-react';
+import { Shield, ShieldCheck, Cpu, Database, FileSearch, Rocket, Lock, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function Architecture() {
@@ -109,7 +109,7 @@ function PlatformCore() {
       {/* Central Hub */}
       <div className="relative z-20 w-32 h-32 rounded-[2rem] border border-primary/40 bg-black shadow-[0_0_50px_rgba(56,189,248,0.2)] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent"></div>
-        <Network className="w-12 h-12 text-primary animate-pulse" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FadfU4VUPZGhEvvxzwuyWLvQ9kCI3%2FDeAgenticAILogo__9f96ad0f.png?alt=media&token=46c4e719-e89c-4325-bce7-acbdef9dfb2a" alt="DeAgenticAI Logo" className="w-16 h-16 object-contain relative z-20 animate-pulse" />
         
         {/* Animated Inner Rings */}
         <div className="absolute inset-0 border-2 border-primary/10 rounded-[1.8rem] animate-[spin_10s_linear_infinite]"></div>

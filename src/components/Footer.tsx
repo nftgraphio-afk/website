@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, Github, Twitter, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Footer() {
@@ -7,9 +7,7 @@ export function Footer() {
 
   const footerLinks = {
     platform: [
-      { name: 'Philosophy', href: '/philosophy' },
       { name: 'Ecosystem', href: '/ecosystem' },
-      { name: 'Rates', href: '/rates' },
       { name: 'Documentation', href: '#', external: true },
     ],
     company: [
@@ -35,8 +33,8 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6 group">
-              <Layers className="w-8 h-8 text-primary transition-transform group-hover:scale-110" />
-              <span className="text-2xl font-bold tracking-tight text-white">Aura</span>
+              <img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FadfU4VUPZGhEvvxzwuyWLvQ9kCI3%2FDeAgenticAILogo__9f96ad0f.png?alt=media&token=46c4e719-e89c-4325-bce7-acbdef9dfb2a" alt="DeAgenticAI Logo" className="w-10 h-10 object-contain transition-transform group-hover:scale-110" />
+              <span className="text-2xl font-bold tracking-tight text-white">DeAgenticAI</span>
             </Link>
             <p className="text-white/50 text-base max-w-sm mb-8 leading-relaxed">
               The modern standard for financial protocols and secure agent delegation. 
@@ -106,7 +104,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/30 text-xs">
-            © {currentYear} Aura Wealth Platform. All rights reserved.
+            © {currentYear} DeAgenticAI Platform. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <span className="text-white/20 text-[10px] font-mono tracking-widest uppercase">

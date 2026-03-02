@@ -13,8 +13,7 @@ import {
   Database,
   FileText, 
   Info,
-  Lock,
-  Layers
+  Lock
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -213,7 +212,7 @@ export function EcosystemServiceLayout(props: EcosystemServiceProps) {
           </div>
           <div className="h-[400px] border border-white/10 bg-white/[0.03] rounded-3xl flex items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 grid-bg opacity-20"></div>
-            <Layers className="w-16 h-16 text-primary/20 animate-pulse" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FadfU4VUPZGhEvvxzwuyWLvQ9kCI3%2FDeAgenticAILogo__9f96ad0f.png?alt=media&token=46c4e719-e89c-4325-bce7-acbdef9dfb2a" alt="DeAgenticAI Logo" className="w-24 h-24 object-contain text-primary/20 animate-pulse" />
           </div>
         </section>
 

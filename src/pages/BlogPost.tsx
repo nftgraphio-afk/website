@@ -10,7 +10,7 @@ export function BlogPost() {
 
   useEffect(() => {
     if (post) {
-      document.title = `${post.title} | Aura Journal`;
+      document.title = `${post.title} | DeAgenticAI Journal`;
       // In a real app, we'd use react-helmet-async for meta tags
     }
     window.scrollTo(0, 0);
@@ -158,12 +158,12 @@ export function BlogPost() {
                 </h3>
                 <div className="space-y-6">
                   <div className="space-y-2">
-                    <h4 className="text-white font-semibold">How does Aura ensure security?</h4>
-                    <p className="text-white/60 text-sm">Aura utilizes advanced cryptographic delegation and real-time AI monitoring to identify and block unauthorized transactions instantly.</p>
+                    <h4 className="text-white font-semibold">How does DeAgenticAI ensure security?</h4>
+                    <p className="text-white/60 text-sm">DeAgenticAI utilizes advanced cryptographic delegation and real-time AI monitoring to identify and block unauthorized transactions instantly.</p>
                   </div>
                   <div className="space-y-2">
                     <h4 className="text-white font-semibold">Can I automate my entire portfolio?</h4>
-                    <p className="text-white/60 text-sm">Yes, Aura allows for full automation through delegated agents while ensuring you maintain absolute ownership and final approval rights.</p>
+                    <p className="text-white/60 text-sm">Yes, DeAgenticAI allows for full automation through delegated agents while ensuring you maintain absolute ownership and final approval rights.</p>
                   </div>
                 </div>
               </section>
@@ -175,7 +175,7 @@ export function BlogPost() {
                 </div>
                 <div className="text-center sm:text-left">
                   <h4 className="text-white font-bold text-lg mb-1">{post.author}</h4>
-                  <p className="text-primary text-sm font-medium mb-3">{post.authorRole} at Aura</p>
+                  <p className="text-primary text-sm font-medium mb-3">{post.authorRole} at DeAgenticAI</p>
                   <p className="text-white/60 text-sm italic">
                     Expert in digital asset security and automated financial protocols with over a decade of experience in the fintech industry.
                   </p>

@@ -17,7 +17,7 @@ export function Blog() {
         className="mb-16"
       >
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
-          Aura <span className="text-primary">Journal</span>
+          DeAgenticAI <span className="text-primary">Journal</span>
         </h1>
         <p className="text-white/60 text-lg max-w-2xl">
           Insights, updates, and deep dives into the future of digital wealth management and secure protocol delegation.

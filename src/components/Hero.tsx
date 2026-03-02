@@ -17,19 +17,21 @@ export function Hero() {
         </h4>
 
         <h1 className="lg:text-7xl leading-[1.1] text-primary text-glow text-5xl italic tracking-tight font-serif mb-6">
-          Architect your wealth <br />
-          <span className="text-white opacity-90">with absolute precision.</span>
+          The control layer for <br />
+          <span className="text-white opacity-90">autonomous AI systems.</span>
         </h1>
 
         <p className="font-sans text-xl lg:text-2xl font-light text-white/70 leading-relaxed tracking-tight max-w-xl mb-12">
-          Advanced financial protocols merged with intuitive design. We provide the infrastructure to accelerate your
-          economic legacy.
+          DeAgenticAI provides the infrastructure for AI agents to operate securely, autonomously, and with absolute precision in Web3.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 gap-x-6 gap-y-6 items-start sm:items-center">
           {/* Animated Shiny CTA Button */}
-          <button className="shiny-cta focus:outline-none">
-            <span>Initialize Protocol</span>
+          <button 
+            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+            className="shiny-cta focus:outline-none"
+          >
+            <span>Join Waitlist</span>
           </button>
 
           {/* Gradient Pill Button with Icon */}

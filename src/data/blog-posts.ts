@@ -56,7 +56,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>As the digital economy grows, the ability to safely delegate tasks and asset management to automated agents is becoming a critical requirement. Whether it's for trading, staking, or simple transaction management, secure delegation is the key to unlocking new levels of financial freedom.</p>
       
       <h3>The Architecture of Trust</h3>
-      <p>At Aura, we've built our delegation infrastructure on a foundation of absolute security. Our protocol uses advanced cryptographic techniques to ensure that delegated agents only have the permissions they need to perform their tasks, and nothing more.</p>
+      <p>At DeAgenticAI, we've built our delegation infrastructure on a foundation of absolute security. Our protocol uses advanced cryptographic techniques to ensure that delegated agents only have the permissions they need to perform their tasks, and nothing more.</p>
 
       <h3>Mitigating Risk</h3>
       <p>Every delegated action is monitored and verified in real-time. If an agent attempts an unauthorized action, the transaction is immediately blocked, and the owner is notified. This multi-layered approach to security ensures that your assets are always protected.</p>
@@ -72,11 +72,11 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: '3',
     slug: 'aura-v2-4-0-what-you-need-to-know',
-    title: 'Aura V2.4.0: What You Need to Know',
+    title: 'DeAgenticAI V2.4.0: What You Need to Know',
     excerpt: 'Exploring the latest updates to our secure protocol, including enhanced performance and new agent-to-agent communication features.',
     content: `
       <h2>Performance Enhancements</h2>
-      <p>Aura V2.4.0 brings significant improvements to our protocol's performance. We've optimized our transaction processing engine to reduce latency and increase throughput, ensuring that your financial operations are faster and more reliable than ever.</p>
+      <p>DeAgenticAI V2.4.0 brings significant improvements to our protocol's performance. We've optimized our transaction processing engine to reduce latency and increase throughput, ensuring that your financial operations are faster and more reliable than ever.</p>
       
       <h3>Agent-to-Agent Communication</h3>
       <p>One of the most exciting new features in this release is our new agent-to-agent communication protocol. This allows different automated agents to coordinate their actions and share data securely, opening up new possibilities for complex financial strategies.</p>
@@ -87,7 +87,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Product',
     image: 'https://images.unsplash.com/photo-1642790103517-18129f1b84e8?auto=format&fit=crop&q=80&w=800',
     readingTime: '4 min read',
-    tags: ['Aura', 'Update', 'Performance', 'Agents']
+    tags: ['DeAgenticAI', 'Update', 'Performance', 'Agents']
   },
   {
     id: '4',
@@ -96,7 +96,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Why traditional institutions are adopting modular protocols and the impact of decentralization on individual wealth builders.',
     content: `
       <h2>The Rise of Decentralization</h2>
-      <p>Decentralization is more than just a buzzword; it's a fundamental shift in how we think about power and control in the financial system. Traditional institutions are increasingly recognizing the benefits of modular, decentralized protocols like Aura.</p>
+      <p>Decentralization is more than just a buzzword; it's a fundamental shift in how we think about power and control in the financial system. Traditional institutions are increasingly recognizing the benefits of modular, decentralized protocols like DeAgenticAI.</p>
     `,
     author: 'David Roa',
     authorRole: 'Economist',
@@ -113,7 +113,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'A guide on setting up delegated agents for your wealth management strategy while maintaining full ownership and control.',
     content: `
       <h2>Getting Started with Automation</h2>
-      <p>Automating your financial portfolio can save you time and help you achieve better results. However, it's important to do it safely. This guide will walk you through the steps of setting up delegated agents on the Aura platform.</p>
+      <p>Automating your financial portfolio can save you time and help you achieve better results. However, it's important to do it safely. This guide will walk you through the steps of setting up delegated agents on the DeAgenticAI platform.</p>
     `,
     author: 'Elena Vance',
     authorRole: 'Head of Innovation',

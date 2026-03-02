@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Sparkles, Zap, Gem, CreditCard, Layers, Network } from 'lucide-react';
+import { Sparkles, Zap, Gem, CreditCard, Network } from 'lucide-react';
 
 export function Features() {
   return (
@@ -122,7 +122,7 @@ function AutomatedExecutionCard() {
           {/* System Message */}
           <div className="self-start max-w-[90%] bg-white/[0.03] backdrop-blur-md rounded-2xl rounded-tl-sm p-5 border border-white/10 relative overflow-hidden group-hover:border-primary/20 transition-colors duration-500">
             <div className="flex items-center gap-2 mb-3 text-primary font-mono text-[10px] uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5" /> Aura Protocol
+              <Sparkles className="w-3.5 h-3.5" /> DeAgenticAI Protocol
             </div>
             <p className="mb-4 text-xs text-white/80 font-light">Analyzing liquidity depth across 4 exchanges. Optimal route secured.</p>
 
@@ -250,7 +250,7 @@ function SmartLiquidityCard() {
 
           {/* Central Hub */}
           <div className="z-10 flex group-hover:border-primary/40 transition-colors duration-500 bg-[#0F110E] w-24 h-24 border-white/10 border rounded-3xl relative items-center justify-center overflow-hidden shadow-2xl">
-            <Layers className="w-8 h-8 text-white relative z-20 group-hover:text-primary transition-colors duration-500" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FadfU4VUPZGhEvvxzwuyWLvQ9kCI3%2FDeAgenticAILogo__9f96ad0f.png?alt=media&token=46c4e719-e89c-4325-bce7-acbdef9dfb2a" alt="DeAgenticAI Logo" className="w-12 h-12 object-contain relative z-20 group-hover:scale-110 transition-transform duration-500" />
           </div>
         </div>
       </div>

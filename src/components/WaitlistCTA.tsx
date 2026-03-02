@@ -31,7 +31,7 @@ export function WaitlistCTA() {
   };
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="waitlist" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -41,7 +41,7 @@ export function WaitlistCTA() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">
-              Join the Future of <span className="text-primary">Wealth Management</span>
+              Join the Future of <span className="text-primary">Agentic Infrastructure</span>
             </h2>
             <p className="text-lg text-white/60 mb-10 max-w-2xl mx-auto">
               Our beta is currently invite-only. Join our waiting list to be the first to know when we launch and get early access to our financial tools.
