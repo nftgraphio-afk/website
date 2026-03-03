@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Shield, Zap, Network, CheckCircle2, AlertTriangle, Cpu, Layers } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { scrollToWaitlist } from '@/lib/scrollToWaitlist';
 
 interface SegmentLandingTemplateProps {
   hero: {
@@ -30,6 +31,8 @@ interface SegmentLandingTemplateProps {
 }
 
 export function SegmentLandingTemplate(props: SegmentLandingTemplateProps) {
+  const navigate = useNavigate();
+
   return (
     <div className="pt-24 min-h-screen bg-black text-white">
       {/* 1. Hero Section */}
@@ -56,7 +59,7 @@ export function SegmentLandingTemplate(props: SegmentLandingTemplateProps) {
           className="flex flex-col sm:flex-row gap-6"
         >
           <Button 
-            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => scrollToWaitlist(navigate)}
             className="rounded-full bg-white text-black px-8 py-6 text-sm font-semibold hover:bg-primary transition-colors"
           >
             {props.hero.ctaPrimary}
@@ -228,7 +231,7 @@ export function SegmentLandingTemplate(props: SegmentLandingTemplateProps) {
          <div className="flex flex-col items-center text-center">
             <h2 className="text-5xl md:text-7xl font-serif font-medium mb-12">{props.strategicCTA.title}</h2>
             <Button 
-              onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => scrollToWaitlist(navigate)}
               className="rounded-full bg-primary text-black px-12 py-8 text-lg font-bold hover:bg-white transition-all shadow-2xl shadow-primary/20"
             >
               {props.strategicCTA.buttonText}

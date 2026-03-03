@@ -3,9 +3,12 @@ import { motion } from 'framer-motion';
 import { Shield, Target, Cpu, MessageSquare, Send, CheckCircle2, ArrowRight, Building2, Globe, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
+import { scrollToWaitlist } from '@/lib/scrollToWaitlist';
 import { blink } from '@/lib/blink';
 
 export function About() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -254,7 +257,7 @@ export function About() {
           <h2 className="text-4xl md:text-6xl font-serif font-medium mb-12">Ready to secure your agents?</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button 
-              onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => scrollToWaitlist(navigate)}
               className="rounded-full bg-white text-black px-10 py-7 text-lg font-semibold hover:bg-primary transition-all"
             >
               Join Early Access

@@ -20,8 +20,8 @@ export function Footer() {
       { name: 'Blog', href: '/blog' },
     ],
     legal: [
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Privacy Policy', href: '#' },
+      { name: 'Terms of Service', href: '/terms' },
+      { name: 'Privacy Policy', href: '/privacy' },
       { name: 'Cookie Policy', href: '#' },
     ],
   };
@@ -95,9 +95,9 @@ export function Footer() {
             <ul className="space-y-4">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-white/40 hover:text-primary transition-colors text-sm">
+                  <Link to={link.href} className="text-white/40 hover:text-primary transition-colors text-sm">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

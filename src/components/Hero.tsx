@@ -2,8 +2,12 @@ import React from 'react';
 import { HeroVisualization } from './HeroVisualization';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { scrollToWaitlist } from '@/lib/scrollToWaitlist';
 
 export function Hero() {
+  const navigate = useNavigate();
+
   return (
     <main className="container lg:px-12 lg:pt-0 min-h-[1100px] flex flex-col lg:flex-row z-10 mr-auto ml-auto pt-0 pr-6 pl-6 relative items-center">
       {/* Left Column: Copy */}
@@ -28,7 +32,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-6 gap-x-6 gap-y-6 items-start sm:items-center">
           {/* Animated Shiny CTA Button */}
           <button 
-            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => scrollToWaitlist(navigate)}
             className="shiny-cta focus:outline-none"
           >
             <span>Join Waitlist</span>
@@ -36,6 +40,7 @@ export function Hero() {
 
           {/* Gradient Pill Button with Icon */}
           <button 
+            onClick={() => navigate('/ecosystem')}
             className="hover:bg-white/10 hover:text-white transition-all flex text-sm font-medium text-slate-300 bg-white/5 rounded-full pt-3 pr-6 pb-3 pl-6 gap-x-2 gap-y-2 items-center group relative overflow-hidden"
             style={{ 
               boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05)',
