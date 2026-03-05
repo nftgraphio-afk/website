@@ -192,6 +192,7 @@ export const ControlPlaneAnimation: React.FC = () => {
 
 const SpiralHexNode = ({ node, convergence, time, isInView }: any) => {
   // Constant idle rotation when orbiting
+  const loopDuration = 18000; // 18 seconds total loop
   const idleRotation = useTransform(time, (t) => {
     if (!isInView) return 0;
     return (t / loopDuration) * Math.PI * 2;
