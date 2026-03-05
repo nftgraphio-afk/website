@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, ShieldCheck, Cpu, Database, FileSearch, Lock, Zap, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { ControlPlaneAnimation } from '../components/ecosystem/ControlPlaneAnimation';
 
 export function Ecosystem() {
   const faqSchema = {
@@ -151,17 +152,9 @@ export function Ecosystem() {
             The Agentic Control Plane Architecture
           </h2>
           
-          <div className="relative h-[400px] mb-20 bg-white/[0.02] border border-white/10 rounded-[3rem] overflow-hidden flex items-center justify-center">
-            <div className="absolute inset-0 grid-bg opacity-30"></div>
-            <div className="relative z-10 text-center">
-              <div className="w-24 h-24 rounded-3xl bg-primary/20 border border-primary/40 flex items-center justify-center mx-auto mb-6 animate-pulse">
-                <Zap className="w-10 h-10 text-primary" />
-              </div>
-              <p className="text-white/40 font-mono text-sm tracking-widest uppercase">Visualizing Cryptographic Data Flow...</p>
-            </div>
-          </div>
+          <ControlPlaneAnimation />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
             {[
               { step: "01", title: "Intent Generation", desc: "Autonomous agent generates a transaction intent based on its internal objective function." },
               { step: "02", title: "Policy Evaluation", desc: "Intent is evaluated against the Policy Engine's cryptographic rules and session constraints." },

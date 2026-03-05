@@ -61,7 +61,7 @@ export function Architecture() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            <span className="text-xs font-mono text-primary uppercase tracking-[0.2em] font-medium">Conceptual Architecture</span>
+            <span className="text-xs font-mono text-primary uppercase tracking-[0.2em] font-medium">Architecture</span>
           </motion.div>
 
           <motion.h2 
@@ -71,8 +71,8 @@ export function Architecture() {
             transition={{ delay: 0.1 }}
             className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium tracking-tight text-white mb-8"
           >
-            Modular building blocks <br />
-            <span className="text-white/60 italic">for agentic systems</span>
+            Built for <span className="text-white/60 italic">Autonomous</span> <br />
+            Intelligence.
           </motion.h2>
 
           <motion.p 
@@ -82,7 +82,8 @@ export function Architecture() {
             transition={{ delay: 0.2 }}
             className="text-xl text-white/60 leading-relaxed max-w-2xl font-light tracking-tight"
           >
-            DeAgenticAI is composed of modular, composable infrastructure designed to enforce policy-based control, enable agent-aware wallets, and provide a secure execution layer for autonomous AI in Web3. Each component lays the foundation for safe, human-aligned autonomy.
+            DeAgenticAI combines distributed MPC custody with cryptographic policy enforcement at the signing layer. 
+            Built specifically for autonomous AI agents in Web3.
           </motion.p>
         </div>
 

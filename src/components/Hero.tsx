@@ -2,12 +2,8 @@ import React from 'react';
 import { HeroVisualization } from './HeroVisualization';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import { scrollToWaitlist } from '@/lib/scrollToWaitlist';
 
 export function Hero() {
-  const navigate = useNavigate();
-
   return (
     <main className="container lg:px-12 lg:pt-0 min-h-[1100px] flex flex-col lg:flex-row z-10 mr-auto ml-auto pt-0 pr-6 pl-6 relative items-center">
       {/* Left Column: Copy */}
@@ -21,18 +17,18 @@ export function Hero() {
         </h4>
 
         <h1 className="lg:text-7xl leading-[1.1] text-primary text-glow text-5xl italic tracking-tight font-serif mb-6">
-          Governing Layer for <br />
-          <span className="text-white opacity-90">Agentic AI integration in Web3.</span>
+          The control layer for <br />
+          <span className="text-white opacity-90">autonomous AI systems.</span>
         </h1>
 
         <p className="font-sans text-xl lg:text-2xl font-light text-white/70 leading-relaxed tracking-tight max-w-xl mb-12">
-          DeAgenticAI is the control layer for agentic AI—enabling safe, policy-based execution and human-defined boundaries for autonomous systems across wallets, protocols, and decentralized services.
+          DeAgenticAI provides the infrastructure for AI agents to operate securely, autonomously, and with absolute precision in Web3.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 gap-x-6 gap-y-6 items-start sm:items-center">
           {/* Animated Shiny CTA Button */}
           <button 
-            onClick={() => scrollToWaitlist(navigate)}
+            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
             className="shiny-cta focus:outline-none"
           >
             <span>Join Waitlist</span>
@@ -40,7 +36,6 @@ export function Hero() {
 
           {/* Gradient Pill Button with Icon */}
           <button 
-            onClick={() => navigate('/ecosystem')}
             className="hover:bg-white/10 hover:text-white transition-all flex text-sm font-medium text-slate-300 bg-white/5 rounded-full pt-3 pr-6 pb-3 pl-6 gap-x-2 gap-y-2 items-center group relative overflow-hidden"
             style={{ 
               boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05)',

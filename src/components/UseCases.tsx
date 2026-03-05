@@ -54,16 +54,16 @@ export function UseCases() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
           </span>
-          <span className="text-xs font-mono text-primary uppercase tracking-[0.2em] font-medium">Who We Serve</span>
+          <span className="text-xs font-mono text-primary uppercase tracking-[0.2em] font-medium">Who We're Building For</span>
         </div>
 
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium tracking-tight text-white mb-8">
-          Control, safety, and autonomy <br />
-          <span className="text-white/60">for agentic AI in Web3</span>
+          The control layer for <br />
+          <span className="text-white/60">autonomous AI systems</span>
         </h2>
 
         <p className="text-xl text-white/60 leading-relaxed max-w-2xl font-light tracking-tight">
-          DeAgenticAI is built for Web3 builders, AI engineers, and security-conscious organizations seeking policy-based control and safe execution for autonomous agents. Our infrastructure enables human-defined constraints and composable integration across decentralized services.
+          DeAgenticAI provides the infrastructure for AI agents to operate securely and autonomously in Web3.
         </p>
       </div>
 

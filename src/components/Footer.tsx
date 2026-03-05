@@ -8,20 +8,17 @@ export function Footer() {
   const footerLinks = {
     platform: [
       { name: 'Ecosystem', href: '/ecosystem' },
-      { name: "AI Infrastructure Teams", href: "/for-ai-infrastructure-teams" },
-      { name: "Web3 Startups", href: "/for-web3-startups" },
-      { name: "Crypto Enterprises", href: "/for-crypto-enterprises" },
       { name: 'Documentation', href: '#', external: true },
     ],
     company: [
-      { name: 'About', href: '/about' },
+      { name: 'About', href: '#' },
       { name: 'Careers', href: '#' },
-      { name: 'Contact', href: '/about#contact' },
+      { name: 'Contact', href: '#' },
       { name: 'Blog', href: '/blog' },
     ],
     legal: [
-      { name: 'Terms of Service', href: '/terms' },
-      { name: 'Privacy Policy', href: '/privacy' },
+      { name: 'Terms of Service', href: '#' },
+      { name: 'Privacy Policy', href: '#' },
       { name: 'Cookie Policy', href: '#' },
     ],
   };
@@ -95,9 +92,9 @@ export function Footer() {
             <ul className="space-y-4">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-white/40 hover:text-primary transition-colors text-sm">
+                  <a href={link.href} className="text-white/40 hover:text-primary transition-colors text-sm">
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
